@@ -1,9 +1,6 @@
-from  string import printable as alph
 
-for x in alph [:18]:
-    num_1 = int(f'98{x}79641',19)
-    num_2 = int(f'36{x}14',19)
-    num_3 = int(f'73{x}4',19)
-    num = num_1 + num_2 + num_3
-    if num % 18 == 0:
-        print(num // 18 )
+for x in range(21, -1, -1):
+    value = 22 ** 7 + 2 * 22 ** 6 + 3 * 22 ** 5 + 22 ** 4 + 3 * 22 ** 3 + x * 22 ** 2 + 5 * 22 ** 1 + 7 + 22 ** 6 + x * 22 ** 5 + 3 * 22 ** 4 + 4 * 22 ** 3 + 5 * 22 ** 2 + 6 * 22 ** 1 + 1
+    if value % 21 == 0:
+        print(value // 21)
+        break

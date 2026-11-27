@@ -1,8 +1,9 @@
-for p in range(16, 60):
-    n1 = int('17496', p)
-    n2 = int('91F83', p)
-    n3 = int('D9543', p)
-    n = n1 + n2 + n3
-    if n % 12 == 0:
-        print(n // 12)
-        break
+from string import printable as alph
+
+for x in alph[:22]:
+    num_1 = int(f'12313{x}57', 22)
+    num_2 = int(f'1{x}34561', 22)
+    num = num_1 + num_2
+    if num % 21 == 0:
+        print(num // 21)
+
